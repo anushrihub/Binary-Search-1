@@ -3,6 +3,13 @@
 
 # In this problem either one part of the binary search is going to be the sorted. So find the mid element at first and check which part is sorted. Once we get the sorted part check the target is present or not and accordingly move the pointer to the either sides. complexity O(log n)
 
+# why we cant do the normal binary search: Because it can be applied on the sorted here and here the one half is not sorted
+# that is why we are adding two extra checks and do the binary only in the valid not for the all 
+# to check whether the left is sorted 
+# if nums[low] <= nums[mid_index]:
+# and its else condition where right is sorted
+# second check is if nums[low] <= target < nums[mid_index]: which is sorted half to decide which side to search
+
 class Solution:
     def search(self, nums: list[int], target: int) -> int:
         # initialising low and high
