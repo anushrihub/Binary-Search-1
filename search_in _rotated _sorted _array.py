@@ -1,6 +1,5 @@
 #  https://leetcode.com/problems/search-in-rotated-sorted-array/
 
-# We can apply binary search on the sorted part only
 
 # In this problem either one part of the binary search is going to be the sorted. So find the mid element at first and check which part is sorted. Once we get the sorted part check the target is present or not and accordingly move the pointer to the either sides. complexity O(log n)
 
