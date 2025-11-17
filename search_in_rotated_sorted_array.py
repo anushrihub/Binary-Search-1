@@ -3,8 +3,11 @@
 
 # In this problem either one part of the binary search is going to be the sorted. So find the mid element at first and check which part is sorted. Once we get the sorted part check the target is present or not and accordingly move the pointer to the either sides. complexity O(log n)
 
+
 # why we cant do the normal binary search: Because it can be applied on the sorted here and here the one half is not sorted
-# that is why we are adding two extra checks and do the binary only in the valid not for the all 
+# that is why we are adding two extra checks and do the binary only in the valid not for the all means we are handeling the situation in such a way that it should check only in the sorted half
+
+
 # to check whether the left is sorted 
 # if nums[low] <= nums[mid_index]:
 # and its else condition where right is sorted
